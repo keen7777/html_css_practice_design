@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Part 14 : CSS position
+    </title>
+    <link rel="stylesheet" href="CSS_files/14_css_position.css">
+</head>
+
+<body style="height: 3000px; padding-top: 200px; padding-left: 60px;">
+    <h1>Part 14 : CSS position </h1>
+    <p>
+        display of different layers, which <strong> show on top which hide behind:</strong><br>
+        1, default is static <br>
+        1-1, header normally as <strong>fixed</strong>, floating above the pages<br>
+        1-2, use top/left do decide how far away from the top(left edge) of the browser <br>
+        1-3, use if together with top-bottom/left-right, element will stretch.
+        1-4, if we don't want header to re-size as the browser window, then use height and width.<br>
+        1-5. use margin to avoid covering content.
+        <hr>
+        2, normally use padding for the body part to avoid header-covering. <br>
+    </p>
+
+    <a href="https://supersimple.dev/exercise/youtube/">youtube link</a>
+    <hr>
+    <h1>Code 14 </h1>
+
+    <p> here we use inline style for convenient</p>
+    <div style="
+    background-color: darkblue; 
+    color: aliceblue; 
+    position: fixed;
+    top: 30px;
+    left: 10px;
+    ">Header 1!!!
+    </div>
+
+    <div style="
+    background-color: darkcyan; 
+    color: aliceblue; 
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    ">Header 2, left-right!!!
+    </div>
+
+    <div style="
+    background-color: darkolivegreen; 
+    color: aliceblue; 
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    height: 60px;
+    ">Header 3, h=60px
+    </div>
+    <div style="background-color: lightskyblue; height: 200px; width: 200px;"> P1-1,h=w=200px</div>
+    <div style="background-color: lightcoral; height: 200px; width: 200px;"> P1-2,h=w=200px</div>
+    <p> see youtube header </p>
+    <hr>
+    <p> now take a look at sidebar</p>
+    <div style="
+    background-color: lightslategray; 
+    color: black; 
+    position: fixed;
+    top: 160px;
+    left: 0;
+    height: 60px;
+    width: 55px;
+    ">sidebar
+    </div>
+
+    <h1>Exercise 14</h1>
+    <p>
+        using height instead to show multiple exercises
+    </p>
+    <button class="Q"> e14 a </button>
+    <div class="e14a">14-a: bottom-right
+    </div>
+
+    <button class="Q"> e14 b </button>
+    <div class="e14b">14-b: right-side-bar
+    </div>
+
+    <button class="Q"> e14 c </button>
+    <div class="e14c'">14-c: cover-all,PS:skip for better display
+    </div>
+
+
+    <h1>Exercise 14 Challenge </h1>
+    <button class="Q"> e14 d </button>
+    <p>
+        an element that cover the entire page
+    </p>
+    <div class="e14d">
+        <div class="e14dd">
+            <div class="e14d-1"> Modal Title</div>
+            <div class="e14d-2"> This is a modal(14d)</div>
+            <button class="e14d-3">Close</button>
+        </div>
+
+    </div>
+
+    <button class="Q"> e14 e </button>
+    <div class="e14e">
+        <div class="e14e-1">
+            <img class="profile-pic" src="kitten.webp">
+            <div class="name"> Oliver Cat</div> (14e)
+        </div> <!--pic+name-->
+        <div class="e14e-2">
+            <button class="add-friend-btn"> Add Friend</button>
+            <button class="message-btn"> Message </button>
+        </div> <!--2 button-->
+    </div>
+
+    <button class="Q"> e14 f </button>
+    <div class="e14f-1">
+        <img class="profile-pics" src="kitten.webp">
+        <img class="profile-pics" src="finch.jpg">
+        <img class="profile-pics" src="puppy.jpg">
+    </div>
+
+    <div class="e14f-2">
+        <div  class="e14f-first-row"> <!--info , + sign -->
+            <div class="info"> INFO </div>
+            <div class="plus"> + </div>
+        </div> 
+        <div class="rows"># new-videos</div>
+        <div class="rows"># updates</div>
+        <div class="rows"># faq</div>
+        14f
+    </div>
+
+
+    
+
+
+</body>

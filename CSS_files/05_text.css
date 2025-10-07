@@ -1,0 +1,235 @@
+p {
+        font-family: Roboto;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .video-title{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        width: 280px;
+    }
+    .video-stats{
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: rgb(96, 96, 96);
+        width: 280px;
+    }
+    .video-author{
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 18px;
+        color: rgb(96, 96, 96);
+        width: 280px;
+    }
+
+    .video-description{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        color: rgb(96, 96, 96);
+        width: 280px;
+    }
+
+    .apple-text{
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        color: white;
+        padding: 18px;
+        background-color: rgb(227,65,64);
+        text-align: center;
+    }
+
+    .shop-link:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .span-example:hover{
+        color: cadetblue;
+    }
+
+    .e5a{
+        font-family: Tahoma;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    .e5b-1{
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .e5b-2{
+        font-family: Arial;
+        font-style: italic;
+        color: red;
+        margin-bottom: 50px
+    }
+
+    .e5c-1{
+        font-family: Verdana;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .e5c-2{
+        font-family: Verdana;
+        color: grey;
+        margin-bottom: 30px
+    }
+
+    .e5c-3{
+        font-family: Verdana;
+        margin-bottom: 30px;
+        width: 280px; 
+        line-height: 22px;
+    }
+
+    .e5c-4{
+        font-family: Verdana;
+        background-color: green;
+        color: white;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .e5d-1{
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .e5d-2{
+        font-family: Arial;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .e5d-3{
+        font-family: Arial;
+        margin-bottom: 20px;
+        text-align: center;
+        color: cornflowerblue;
+    }
+
+    .e5e-1{
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: orange;
+        margin-bottom: 10px;
+    }
+
+    .e5e-2{
+        font-family: Arial;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .e5e-3{
+        font-family: Arial;
+        margin-bottom: 10px;
+        font-size: 34px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .e5e-4{
+        font-family: Arial;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .e5e-5{
+        font-family: Arial;
+        background-color: rgb(0, 113, 227);
+        color: white;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .e5f-1{
+        font-family: Arial;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .e5f-11{
+        font-family: Arial;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: gray;
+    }
+
+    .e5f-2{
+        font-family: Arial;
+        margin-bottom: 10px;
+        color: rgb(16, 152, 16);
+    }
+
+    .e5f-3{
+        font-family: Arial;
+        margin-bottom: 10px;
+        color: grey;
+    }
+
+    .e5f-31{
+        font-family: Arial;
+        margin-bottom: 10px;
+        color: rgb(235, 28, 28);
+    }
+
+    .e5g-1{
+        font-family: Arial;
+        margin-bottom: 10px;
+    }
+
+    .e5g-11{
+        font-family: Arial;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .e5g-12{
+        font-family: Arial;
+        margin-bottom: 10px;
+        color: gray;
+    }
+
+    .e5g-2{
+        font-family: Arial;
+        margin-bottom: 20px;
+        width: 560px;
+    }
+
+    .e5g-3{
+        font-family: Arial;
+        margin-bottom: 10px;
+    }
+
+    .e5g-31{
+        font-family: Arial;
+        margin-bottom: 10px;
+        color: rgb(53, 141, 212);
+    }

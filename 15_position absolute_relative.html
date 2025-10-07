@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Part 15 : CSS position absolute_relative
+    </title>
+    <link rel="stylesheet" href="CSS_files/15_position absolute_relative.css">
+</head>
+
+<body style=" height: 4000px; padding-top: 100px; padding-left: 60px;">
+    <h1>Part 15 : CSS position absolute_relative </h1>
+    <p>
+        Position <strong> Absolute or Relative</strong>?<br>
+        1, fixed: placed in the browser window <br>
+        2, absolute: placed <strong>on the page itself</strong>, by scrolling it might disappear.<br>
+        2-2, if not specify with top/left/right/bottom, then insert as the order/location of the codes <br>
+        <hr>
+        3, ⭐: Z-index: decide the depth(display layers). <br>
+        3-1, the larger Z we have, the more front it will become, default is 0.
+        3-2, if we put abs inside a fixed, the top/left... is relative to the fixed element, not the page anymore.
+        <hr>
+        4, relative: fixed within an element, but move as scrolling the pages.(notification,timestamp...)
+        4-1, by putting abs inside a relative.<br>
+        5, normally element written later at the bottom of the code will appear in front, but position <strong> static
+            appears in the back!</strong> <br>
+        5-1,use z-index to solve.
+
+    </p>
+
+    <a href="https://supersimple.dev/exercise/youtube/">youtube link</a>
+    <hr>
+    <h1>Code 15 </h1>
+
+    <p> here we use inline style for convenient</p>
+    <div style="
+    background-color: rgb(0, 0, 0); 
+    color: aliceblue; 
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    ">Header
+    </div>
+    </div>
+    <div style="
+        position: absolute;
+        background-color: rgb(184, 22, 22);
+        color: white;
+    ">
+        absolute
+    </div>
+    <div style="
+        position: absolute;
+        background-color: rgb(184, 22, 22);
+        color: white;
+        top:60px;
+        right: 10px;
+        z-index: -1;
+    ">
+        absolute,right, z= -1
+    </div>
+    <div style="background-color: lightskyblue; height: 200px; width: 200px;"> P1-1,h=w=200px</div>
+    <div style="
+    background-color: lightcoral; 
+    height: 200px; 
+    width: 200px;
+    position: relative;
+    "> P1-2,h=w=200px,relative
+        <div style="
+        position: absolute;
+        background-color: rgb(184, 22, 22);
+        color: white;
+        top: 0px;
+        right: 0;
+    ">
+            abs in relative
+        </div>
+    </div>
+    <p> see youtube header </p>
+    <div style="
+    background-color: rgb(61, 128, 64); 
+    color: rgb(255, 255, 255); 
+    position: fixed;
+    top: 50px;
+    bottom: 500px;
+    left: 0;
+    width: 72px;
+    ">sidebar
+        <div style="
+        position: absolute;
+        background-color: rgb(184, 22, 22);
+        color: white;
+        top: 0px;
+        right: 0;
+    ">
+            X
+        </div>
+    </div>
+
+    <h1>Exercise 15</h1>
+    <p>
+        a= X sign, b= relative frame, d= absolute time stamp
+    </p>
+    <button class="Q"> e15 a-d </button>
+    <div class="e15a-d-container">
+        e15 exercises
+        <div class="x-sign">X</div>
+        <div class="time-stp">0:29</div>
+    </div>
+    <hr>
+    <h1>Exercise 15 Challenge </h1>
+    <button class="Q"> e15 e-f </button>
+    <div class="e15e-container">
+        <img class="shirt" src="shirt.jpg">
+        <div class="discount">20% OFF</div>
+        <div class="add-cart-container">
+            <button  class="add-cart-btn"> Add to Cart</button>
+        </div>
+    </div>
+
+
+
+
+
+</body>

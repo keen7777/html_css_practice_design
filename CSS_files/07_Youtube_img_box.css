@@ -1,0 +1,146 @@
+p {
+    font-family: Arial;
+    color: rgb(100, 100, 100);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ex01 {
+    width: 300px;
+}
+
+.ex02 {
+    width: 300px;
+    height: 300px;
+}
+
+.ex03 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.ex04 {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-width: 2px;
+    border-color: palevioletred;
+    border-style: groove;
+}
+
+.s-bar {
+    font-size: 20px;
+    margin-left: 22px;
+}
+
+.puppy1 {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.puppy2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+}
+
+.puppy3 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    border-radius: 50%;
+}
+
+.e7d {
+    border-radius: 5px;
+    border-width: 1px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    border-color: rgb(200, 200, 200);
+}
+
+.e7e {
+    border-radius: 18px;
+    border-width: 0px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    width: 500px;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.e7f-1 {
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.e7f-2 {
+    border-width: 2px;
+    border-color: gray;
+    border-radius: 2px;
+    border-style: solid;
+    font-size: large;
+    width: 400px;
+}
+
+.e7f-3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.e7f-4 {
+    background-color: rgb(10, 102, 194);
+    border-radius: 30px;
+    color: white;
+    border-width: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.e7g-1 {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.e7g-2 {
+    font-size: 18px;
+    border: none;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.e7g-3 {
+    background-color: rgb(37, 112, 225);
+    color: white;
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    width: 80px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: 8px;
+    vertical-align: middle;
+}

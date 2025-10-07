@@ -1,0 +1,102 @@
+.Q {
+    background-color: rgb(154, 232, 154);
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: none;
+}
+
+.inline {
+    font-size: large;
+    background-color: lightcoral;
+    display: inline-block;
+}
+
+.block {
+    font-size: large;
+    background-color: lightskyblue;
+    display: block;
+}
+
+/* final design*/
+
+
+/*shopping element design*/
+.e16d {
+    height: 300px;
+    width: 400px;
+    background-color: bisque;
+}
+.e16d-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: top;
+    top: 260px;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    padding: 10px 10px;
+}
+
+.finch {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.intro {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip-container .tooltip {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    height: 80px;
+    width: 260px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+
+
+
+.finch-2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.user-fan-num {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Part 12 : Flexbox
+    </title>
+    <link rel="stylesheet" href="CSS_files/12_flexbox.css">
+</head>
+
+<body>
+    <h1>Part 12 : Flexbox </h1>
+    <p>
+        Similar to grid use it to create header:<br>
+        1, Flexbox is <strong>more flexible</strong>, looks like an <strong>inline block</strong>; <br>
+        1-1, grid's xfr == flex: x, taking the portion of remaining space <br>
+        1-2, use flex-direction to decide the layout(horizontal or vertical)
+        <hr>
+        2, ⭐difference<br>
+        2-1, Grid defined the column's charactors in advance, but flexbox just writes it <strong>within the single cell</strong> <br>
+        2-2, <strong> change of content using Flexbox</strong>. so if we our header has 3 element before login, after 4 element,then use flexbox. <br>
+        2-3, use justify-content to arrange the location of elements <br>
+        2-4, use align-items to decide how they align with each other.<br>
+        <hr>
+        3,⭐ how to set max/minwidth of an element as zoom in/out?<br>
+        3-1, use flex, then use max/minwidth <br>
+    </p>
+
+    <a href="https://supersimple.dev/exercise/youtube/">youtube link</a>
+    <hr>
+    <h1>Code 12 </h1>
+    <p> here we use inline style for convenient</p>
+    <div style="
+    display: flex;
+    flex-direction: row;">
+        <div style="background-color: lightskyblue;"> F1-1,take as much space as it needs</div>
+        <div style="background-color: lightcoral;"> F1-2,
+            <p>
+                extra para, looks higher
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div style="
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;">
+        <div style="background-color: lightskyblue;
+        width:100px"> F2-1,100px</div>
+        <div style="background-color: lightcoral; flex: 1;"> F2-2,flex:1</div>
+    </div>
+
+    <hr>
+    <div style="
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;">
+        <div style="background-color: lightskyblue;
+        width:100px"> F3-1,100px</div>
+        <div style="background-color: lightcoral; flex: 1;"> F3-2,flex:1</div>
+        <div style="background-color: lightskyblue; flex: 2;"> F3-3,flex:2</div>
+    </div>
+
+    <hr>
+    <p>
+        <strong>
+            difference between grid and flexbox
+        </strong>
+    </p>
+    <p> create a header!</p>
+    <div style="
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightseagreen;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;">
+        <div style="background-color: lightskyblue;
+        width:100px;"> F4-1,100px</div>
+        <div style="background-color: lightcoral; width:100px;"> F4-2,100px</div>
+        <div style="background-color: lightskyblue; width:100px;"> F4-3,100px</div>
+    </div>
+
+    <div style="
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightseagreen;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;">
+        <div style="background-color: lightskyblue;
+        width:100px;"> F4-1,100px</div>
+        <div style="background-color: lightcoral; width:100px;"> F4-2,100px</div>
+        <div style="background-color: lightskyblue; width:100px;"> F4-3,100px</div>
+    </div>
+    
+    <div style="
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightseagreen;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;">
+        <div style="background-color: lightskyblue;
+        width:100px;"> F4-1,100px</div>
+        <div style="background-color: lightcoral; width:100px;"> F4-2,100px</div>
+        <div style="background-color: lightskyblue; width:100px;"> F4-3,100px</div>
+    </div>
+
+    <div style="
+    height: 70px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightseagreen;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;">
+        <div style="background-color: lightskyblue;
+        width:100px;"> F4-1,100px</div>
+        <div style="background-color: lightcoral; width:100px;"> F4-2,100px</div>
+        <div style="background-color: lightskyblue; width:100px;"> F4-3,100px</div>
+    </div>
+    <hr>
+
+    <h1>Exercise 12 </h1>
+    <button class="Q"> E12 a </button>
+    <div class="e12a">
+        <div class="e12-1 e12a-1">
+            200px
+        </div>
+        <div class="e12-2 e12a-2">
+            75px
+        </div>
+    </div>
+
+    <button class="Q"> E12 b </button>
+    <div class="e12b">
+        <div class="e12-1 e12b-1">
+            50px
+        </div>
+        <div class="e12-2 e12b-2">
+            flex 1
+        </div>
+        <div class="e12-1 e12b-3">
+            75px
+        </div>
+    </div>
+
+    <button class="Q"> E12 c </button>
+    <div class="e12c">
+        <div class="e12-1 e12c-1">
+            F1
+        </div>
+        <div class="e12-2 e12c-2">
+            F2
+        </div>
+        <div class="e12-1 e12c-3">
+            F3
+        </div>
+        <div class="e12-2 e12c-4">
+           F4
+        </div>
+    </div>
+
+    <button class="Q"> E12 d </button>
+    <div class="e12d">
+        <div class="e12-1 e12d-1">
+            F1
+        </div>
+        <div class="e12-2 e12d-2">
+            F2
+        </div>
+    </div>
+    <hr>
+
+    <h1>Exercise 12 Challenge </h1>
+    <button class="Q"> E12e </button>
+    <div class="e12e"> <!-- nested layout, first vertical divide into 3 part, then everyone horizontal into 2 parts text + buttons? -->
+        <div class="e12e-0"> <!-- 1st element -->
+            <div class="e12e-text" > Home </div>
+            <div class="e12e-number"> 14 </div>
+        </div> <!-- 1st element ends -->
+
+        <div class="e12e-0"> <!-- 2nd element -->
+            <div class="e12e-text" > Notifications </div>
+            <div class="e12e-number"> 3 </div>
+        </div> <!-- 2nd element ends -->
+
+        <div class="e12e-0"> <!-- 3rd element -->
+            <div class="e12e-text" > Messages </div>
+            <div class="e12e-number"> 5 </div>
+        </div> <!-- 3rd element ends -->
+    </div>
+    <hr>
+    <button class="Q"> E12f </button>
+    <div class="e12f"> <!-- header with 3 section -->
+        <div class="e12f-1"> <!-- header: L section -->
+            Home
+        </div>
+        <div class="e12f-2"> <!-- header: M section -->
+            <input class="e12f-22" type="text" placeholder="Search">
+        </div>
+        <div class="e12f-3"> <!-- header: R section -->
+            Download
+        </div>
+
+    </div>
+
+    <!-- nested layout, first vertival divide into 3 part, then horizontal 3 parts, in the middle 3 vertical -->
+    <button class="Q"> E12g </button>
+    <p>turn nested layout into nested grids, from earlier exercise</p>
+    <div class="e12g"> <!-- flex-->
+        <div class="e12g-0"> <!-- 1st element-->
+            <img class="e12g-1" src="puppy.jpg">
+            <div class="e12g-2"> <!-- extra nest-->
+                <p class="e12g-21">Oliver </p>
+                <p class="e12g-22">the puppy </p>
+                <p class="e12g-23">Popular </p>
+            </div>
+            <button class="e12g-3">
+                Follow
+            </button>
+        </div>
+
+        <div class="e12g-0"> <!-- 1st element-->
+            <img class="e12g-1" src="kitten.webp">
+            <div class="e12g-2"> <!-- extra nest-->
+                <p class="e12g-21">Mimi </p>
+                <p class="e12g-22">Cute Kitten </p>
+                <p class="e12g-23">Popular </p>
+            </div>
+            <button class="e12g-3">
+                Follow
+            </button>
+        </div>
+
+        <div class="e12g-0"> <!-- 1st element-->
+            <img class="e12g-1" src="finch.jpg">
+            <div class="e12g-2"> <!-- extra nest-->
+                <p class="e12g-21">Finch </p>
+                <p class="e12g-22">Sharp Bird </p>
+                <p class="e12g-23">Popular </p>
+            </div>
+            <button class="e12g-3">
+                Follow
+            </button>
+        </div>
+    </div> <!-- flex ends-->
+
+</body>

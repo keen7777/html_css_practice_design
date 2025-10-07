@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Part 10 : nested layouts technique
+    </title>
+    <link rel="stylesheet" href="CSS_files/10_nested.css">
+</head>
+
+<body>
+    <h1>Part 10 : nested layouts technique </h1>
+    <p>
+        combination of vertical layout and horizontal layout in one container:<br>
+        1, just like the division tree, but with multiple node numbers on the same layer, see pic below<br>
+        2, draw the layout first, from large to small, remember to do the alignment <br>
+        3, if there are multiple elements, design the class-name a bit carefully <br>
+    </p>
+
+    <a href="https://supersimple.dev/exercise/youtube/">youtube link</a>
+    <hr>
+    <h1>Code 10 </h1>
+    <img class="ex01" src="nested.jpg">
+    <p>
+        Check the my_youtube page for more info
+    </p>
+    <h1>Exercise 10 </h1>
+<button class="Q"> E10 a-d </button>
+    <p>
+        Draw layouts by hand.
+    </p>
+
+    <hr>
+    <h1>Exercise 10  Challenge </h1>
+<button class="Q"> E10e </button>
+<p>
+    Draw layout from 09_g, first 3 vertical layout, then horizon layout, in middle an extra vertical layout
+</p>
+ <hr>
+    <!-- nested layout, first horizon divide into 2 part, then vertical the bottem part into 2 parts -->
+    <button class="Q"> E10e </button>
+    <p>nested layout, first horizontal divide into 3 part, then vertical 4 parts, the third part horizontal thumbnail + text</p>
+    <div class="e10e"> <!-- 1st element-->
+        <img class="e10e-1" src="puppy.jpg">
+        <p class="e10e-2">Oliver </p>
+        <div class="e10e-3"> <!-- extra nest-->
+           <img class="e10e-31" src="parrot.jpg">
+            <p class="e10e-32">2 mutual friends </p> 
+        </div>
+        
+        <button class="e10e-4">
+            Add Friend
+        </button>
+    </div>
+
+    <div class="e10e"> <!-- 2nd element-->
+        <img class="e10e-1" src="kitten.webp">
+        <p class="e10e-2">Moew </p>
+        <div class="e10e-3"> <!-- extra nest-->
+           <img class="e10e-31" src="parrot.jpg">
+            <p class="e10e-32">3 mutual friends </p> 
+        </div>
+        <button class="e10e-4">
+            Add Friend
+        </button>
+    </div>
+
+    <div class="e10e"> <!-- 3rd element-->
+        <img class="e10e-1" src="finch.jpg">
+        <p class="e10e-2">Berg </p>
+        <div class="e10e-3"> <!-- extra nest-->
+           <img class="e10e-31" src="parrot.jpg">
+            <p class="e10e-32">4 mutual friends </p> 
+        </div>
+        <button class="e10e-4">
+            Add Friend
+        </button>
+    </div>
+
+    <hr>
+
+</body>

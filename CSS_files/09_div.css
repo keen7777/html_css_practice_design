@@ -1,0 +1,238 @@
+.Q {
+    background-color: rgb(154, 232, 154);
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: none;
+}
+
+.inline {
+    font-size: large;
+    background-color: lightcoral;
+    display: inline-block;
+}
+
+.block {
+    font-size: large;
+    background-color: lightskyblue;
+    display: block;
+}
+
+.finch {
+    width: 200px;
+    background-color: aquamarine;
+}
+
+.e9a {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.e9b {
+    background-color: rgb(34, 169, 34);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 5px;
+}
+
+.e9c {
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    width: 300px;
+}
+
+.e9d {
+    background-color: black;
+    display: inline-block;
+    width: 360px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.e9d-1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.e9d-2 {
+    color: rgb(167, 165, 165);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.e9e {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 450px;
+    border-radius: 6px;
+}
+
+.e9e-1 {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.e9e-2 {
+    font-size: 18px;
+    border: none;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.e9e-3 {
+    background-color: rgb(37, 112, 225);
+    color: white;
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    width: 80px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.e9f {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    display: inline-block;
+}
+
+.e9f-1 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    vertical-align: middle;
+}
+
+.e9f-2 {
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.e9f-3 {
+    color: gray;
+    margin-left: 8px;
+    margin-bottom: 12px;
+}
+
+.e9f-4 {
+    background-color: rgb(37, 112, 225);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    width: 120px;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.e9g {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    display: inline-block;
+    margin-right:10px;
+}
+
+.e9g-1 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    vertical-align: middle;
+}
+
+.e9g-2 {
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.e9g-3 {
+    color: gray;
+    margin-left: 8px;
+    margin-bottom: 12px;
+}
+
+.e9g-4 {
+    background-color: rgb(37, 112, 225);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    width: 120px;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.e9h {
+    text-align: center;
+    width: 500px;
+}
+
+.google-logo {
+    width: 200px;
+}
+
+.e9h-1{
+    width: 500px;
+    padding-bottom: 12px;
+    padding-top: 12px ;
+    padding-left: 6px;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+.e9h-2 {
+    background-color: rgb(235, 232, 232);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    margin-right: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}

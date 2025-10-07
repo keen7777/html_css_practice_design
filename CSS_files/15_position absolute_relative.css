@@ -1,0 +1,98 @@
+.Q {
+    background-color: rgb(154, 232, 154);
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: none;
+}
+
+.inline {
+    font-size: large;
+    background-color: lightcoral;
+    display: inline-block;
+}
+
+.block {
+    font-size: large;
+    background-color: lightskyblue;
+    display: block;
+}
+
+/* color pattern of grids*/
+
+.e15a-d-container {
+    background-color: rgb(199, 197, 197);
+    height: 180px;
+    width: 320px;
+    position: fixed;
+    right: 100px;
+    bottom: 200px;
+}
+
+.x-sign {
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    padding: 4px 11px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+}
+
+.time-stp {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    padding: 2px 4px;
+    background-color: black;
+    color: white;
+}
+
+/*shopping element design*/
+.e15e-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+
+.shirt {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.discount {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    padding: 2px 12px;
+    background-color: black;
+    color: white;
+}
+
+.add-cart-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart-btn{
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    padding: 6px 12px;
+    cursor: pointer;
+}

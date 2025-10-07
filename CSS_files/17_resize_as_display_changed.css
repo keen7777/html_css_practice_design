@@ -1,0 +1,84 @@
+.Q {
+    background-color: rgb(154, 232, 154);
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: none;
+}
+
+.inline {
+    font-size: large;
+    background-color: lightcoral;
+    display: inline-block;
+}
+
+.block {
+    font-size: large;
+    background-color: lightskyblue;
+    display: block;
+}
+
+/* color pattern of grids*/
+.media-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+    align-items: center;
+    justify-self: center;
+}
+
+.cell {
+    background-color: lightsteelblue;
+    border: 1px solid #999;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    width: 300px;
+    font-size: 40px;
+}
+
+
+@media(max-width: 650px){
+ .media-example{
+    grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media(min-width: 651px) and (min-width: 999px){
+ .media-example{
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+}
+
+@media(min-width: 1000px){
+ .media-example{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+}
+
+.padding-1 {
+    display: inline-block;
+    font-size: large;
+    background-color: rgb(141, 174, 239);
+    border: 1px solid rgb(48, 48, 49);
+    padding: 10px;
+}
+
+.padding-2 {
+    display: inline-block;
+    font-size: large;
+    background-color: rgb(141, 174, 239);
+    border: 1px solid rgb(48, 48, 49);
+    padding: 5px 50px;
+}
+
+.padding-4 {
+    display: inline-block;
+    font-size: large;
+    background-color: rgb(141, 174, 239);
+    border: 1px solid rgb(48, 48, 49);
+    padding: 1px 20px 100px 200px;
+}

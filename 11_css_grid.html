@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Part 11 : CSS Grid
+    </title>
+    <link rel="stylesheet" href="CSS_files/11_css_grid.css">
+</head>
+
+<body>
+    <h1>Part 11 : CSS Grid </h1>
+    <p>
+        Problem with div:<br>
+        1, always gaps between elements or due to the <strong>space in div-/div,margin, padding</strong>; always need to
+        careful,<br>
+        1-1, ❗example: container=300px, element1=50px, element2=250px, but it will probably overflow and continue in 2nd
+        line <br>
+        <hr>
+        2, ⭐Use CSS grid to create perfectly aligned horizontal layouts<br>
+        2-1, Grid is a layout that has rows and columns,2 by 3 = 2 rows and 3 columns <br>
+        2-2, grid is div has style: display grid <br>
+        2-3, it removes the gaps as we us block/inline block; and if more texts are here automatically aligned <br>
+        2-4, if we have more divs than defined columns, then automatically start a new row.<br>
+        2-5, for the column value, could be fix as xxxpx, or take the remaining space, 1fr,<br>
+        2-6, for <strong> multiple frs </strong>, like 1fr 1fr 2fr = 0.25 : 0.25: 0.5 of the screen.<br>
+        <hr>
+        3,⭐ how to set upperlimit/lowerlimit of display element number as zoom in/out?<br>
+        3-1, notice that outter grid container means all the elements(rows) together have a height, <br>
+        3-2, but a height in a grid it self means only this gird take that much height.<br>
+        3-3, make sure check both inner and outter container and if necessary, nested different scale of grids.
+    </p>
+
+    <a href="https://supersimple.dev/exercise/youtube/">youtube link</a>
+    <hr>
+    <h1>Code 11 </h1>
+    <p> here we use inline style for convenient</p>
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;">
+        <div style="background-color: lightskyblue;"> D1-1,100px</div>
+        <div style="background-color: lightcoral;"> D1-2,100px with extra text</div>
+    </div>
+    <hr>
+    <div style="
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;">
+        <div style="background-color: lightskyblue;"> D2-1,100px</div>
+        <div style="background-color: lightcoral;"> D2-2,100px</div>
+        <div style="background-color: lightskyblue;"> D2-3,200px</div>
+        <div style="background-color: lightcoral;"> D2-4,...</div>
+    </div>
+
+    <hr>
+    <div style="
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr;">
+        <div style="background-color: lightskyblue;"> D3-1,100px</div>
+        <div style="background-color: lightcoral;"> D3-2,1fr</div>
+        <div style="background-color: lightskyblue;"> D3-3,...</div>
+        <div style="background-color: lightcoral;"> D3-4,...</div>
+    </div>
+
+    <hr>
+    <div style="
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 2fr;">
+        <div style="background-color: lightskyblue;"> D4-1,100px</div>
+        <div style="background-color: lightcoral;"> D4-2,1fr</div>
+        <div style="background-color: lightskyblue;"> D4-3,1fr</div>
+        <div style="background-color: lightcoral;"> D4-4,2fr</div>
+        <div style="background-color: lightskyblue;"> D4-5,...</div>
+    </div>
+
+    <hr>
+    <div style="
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    padding-bottom: 100px;">
+        <div style="background-color: lightskyblue; height: 200px;"> D5-1,1fr</div>
+        <div style="background-color: lightcoral;height: 200px;"> D5-2,1fr</div>
+        <div style="background-color: lightskyblue;height: 200px;"> D5-3,1fr</div>
+        <div style="background-color: lightcoral;height: 200px;"> D5-4,height=200px for all grid,padding bottem for
+            better view as roll down</div>
+
+    </div>
+
+    <hr>
+    <div style="
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding-bottom: 100px;">
+        <div style="background-color: lightskyblue; height: 200px;"> D6-1,1fr</div>
+        <div style="background-color: lightcoral;height: 200px;"> D6-2,1fr</div>
+        <div style="background-color: lightskyblue;height: 200px;"> D6-3,1fr</div>
+        <div style="background-color: lightcoral; height: 200px;"> D6-4,1fr</div>
+        <div style="background-color: lightskyblue;height: 200px;"> D6-5,1fr</div>
+        <div style="background-color: lightcoral;height: 200px;"> D6-6,1fr</div>
+        <div style="background-color: lightsalmon;height: 200px;"> D6-7,h=200px for all,padding bottem, gap between
+            columns and rows</div>
+    </div>
+    <h1>Exercise 11 </h1>
+    <button class="Q"> E11 a </button>
+    <div class="e11a">
+        <div class="e11-1">
+            200px
+        </div>
+        <div class="e11-2">
+            75px
+        </div>
+    </div>
+
+    <button class="Q"> E11 b </button>
+    <div class="e11b">
+        <div class="e11-1">
+            50px
+        </div>
+        <div class="e11-2">
+            1fr
+        </div>
+        <div class="e11-1">
+            75px
+        </div>
+    </div>
+
+    <button class="Q"> E11 c </button>
+    <div class="e11c">
+        <div class="e11-1">
+            D1-1fr
+        </div>
+        <div class="e11-2">
+            D2-1fr
+        </div>
+        <div class="e11-1">
+            D3-1fr
+        </div>
+        <div class="e11-2">
+            D4-1fr
+        </div>
+        <div class="e11-2">
+            D5...
+        </div>
+        <div class="e11-1">
+            D6...
+        </div>
+        <div class="e11-2">
+            D7...
+        </div>
+        <div class="e11-1">
+            D8...
+        </div>
+    </div>
+    <hr>
+    <!-- nested layout, first horizon divide into 2 part, then vertical the bottem part into 2 parts -->
+    <button class="Q"> E11d </button>
+    <p>turn nested layout into nested grids, from earlier exercise</p>
+    <div class="e11dd"> <!-- grid-->
+        <div class="e11d"> <!-- 1st element-->
+            <img class="e11d-1" src="puppy.jpg">
+            <p class="e11d-2">Oliver </p>
+            <div class="e11d-3"> <!-- extra nest-->
+                <img class="e11d-31" src="parrot.jpg">
+                <p class="e11d-32">2 mutual friends </p>
+            </div>
+
+            <button class="e11d-4">
+                Add Friend
+            </button>
+        </div>
+
+        <div class="e11d"> <!-- 2nd element-->
+            <img class="e11d-1" src="kitten.webp">
+            <p class="e11d-2">Moew </p>
+            <div class="e11d-3"> <!-- extra nest-->
+                <img class="e11d-31" src="parrot.jpg">
+                <p class="e11d-32">3 mutual friends </p>
+            </div>
+            <button class="e11d-4">
+                Add Friend
+            </button>
+        </div>
+
+        <div class="e11d"> <!-- 3rd element-->
+            <img class="e11d-1" src="finch.jpg">
+            <p class="e11d-2">Berg </p>
+            <div class="e11d-3"> <!-- extra nest-->
+                <img class="e11d-31" src="parrot.jpg">
+                <p class="e11d-32">4 mutual friends </p>
+            </div>
+            <button class="e11d-4">
+                Add Friend
+            </button>
+        </div>
+    </div> <!-- grid ends-->
+
+
+    <hr>
+
+    <h1>Exercise 11 Challenge </h1>
+    
+</body>

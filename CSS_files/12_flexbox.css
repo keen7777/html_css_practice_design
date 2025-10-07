@@ -1,0 +1,225 @@
+.Q {
+    background-color: rgb(154, 232, 154);
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: none;
+}
+
+.inline {
+    font-size: large;
+    background-color: lightcoral;
+    display: inline-block;
+}
+
+.block {
+    font-size: large;
+    background-color: lightskyblue;
+    display: block;
+}
+
+/* color pattern of grids*/
+.e12-1 {
+    background-color: lightsteelblue;
+}
+
+.e12-2 {
+    background-color: lightpink;
+}
+
+.e12a {
+    display: flex;
+    flex-direction: row;
+}
+
+.e12a-1 {
+    width: 200px;
+}
+
+.e12a-2 {
+    width: 75px;
+}
+
+
+.e12b {
+    display: flex;
+    flex-direction: row;
+}
+
+.e12b-1 {
+    width: 50px;
+}
+
+.e12b-2 {
+    flex: 1;
+}
+
+.e12b-3 {
+    width: 75px;
+}
+
+
+.e12c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.e12d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    align-items: center;
+}
+
+.e12e {
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    width: 300px;
+    border-radius: 6px;
+}
+
+.e12e-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.e12e-text {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.e12e-number {
+    background-color: rgb(49, 109, 245);
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.e12f {
+    height: 75px;
+    background-color: rgb(135, 78, 211);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.e12f-1{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.e12f-22{
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 24px;
+    color: rgb(62, 90, 60);
+    max-width: 800px;
+    min-width: 400px;
+    padding:8px 16px;
+    border-width: 0;
+}
+
+.e12f-22::placeholder {
+    color: rgb(180, 180, 180);
+    opacity: 1; 
+}
+
+.e12f-3{
+    font-size: 18px;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    padding:12px 14px;
+    margin-right: 10px;
+}
+
+
+/*12g, reuse the styles*/
+.e12g {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 500px;
+}
+
+.e12g-0 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.e12g-1 {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    border-radius: 100%;
+    vertical-align: middle;
+    
+}
+
+.e12g-2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-left: 10px;
+}
+
+.e12g-21 {
+   font-size: 16px;
+   font-weight: bold;
+   margin: 0;
+}
+.e12g-22 {
+   font-size: 16px;
+   color: rgb(144, 143, 143);
+    margin: 0;
+}
+.e12g-23 {
+   font-size: 14px;
+   color: rgb(148, 148, 148);
+   margin: 0;
+}
+
+
+.e12g-3 {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(41, 132, 251);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    cursor: pointer;
+    margin-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}

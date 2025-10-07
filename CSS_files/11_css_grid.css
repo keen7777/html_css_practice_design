@@ -1,0 +1,118 @@
+.Q {
+    background-color: rgb(154, 232, 154);
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: none;
+}
+
+.inline {
+    font-size: large;
+    background-color: lightcoral;
+    display: inline-block;
+}
+
+.block {
+    font-size: large;
+    background-color: lightskyblue;
+    display: block;
+}
+
+/* color pattern of grids*/
+.e11-1{
+    background-color: lightsteelblue;
+}
+
+.e11-2{
+    background-color: lightpink;
+}
+
+.e11a {
+    display: grid;
+    grid-template-columns: 200px 75px;
+}
+
+.e11b{
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+
+.e11c{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.e11dd {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.e11d {
+    width: 200px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    margin-right:16px;
+    vertical-align: top;
+}
+
+.e11d-1 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    vertical-align: middle;
+    margin-bottom: 12px;
+}
+
+.e11d-2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+/*profile row*/
+.e11d-3 {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    align-items: center;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.e11d-31 {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    object-position: left;
+    border-width: none;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+.e11d-32 {
+    color: rgb(100, 100, 100);
+}
+
+.e11d-4 {
+    background-color: rgb(24, 119, 242);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 36px;
+    width: 120px;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Part 13 : Nested Flexbox
+    </title>
+    <link rel="stylesheet" href="CSS_files/13_nested_flexbox.css">
+</head>
+
+<body>
+    <h1>Part 13 : Nested Flexbox </h1>
+    <p>
+        properties:<br>
+        1, Flexbox is only affect on <strong>it's children</strong> <br>
+        1-1, for example align-items.<br>
+        1-2, if we have a grandchildren of the div(flexbox), it won't have any proeprties of flex <br>
+        <hr>
+        2, we can also set a width for flex 1, to be certain about shrinking how much<br>
+        3,use negative margin to merge the 2 neighbor edges<br>
+        4,flex-shrink: 0; means elements in flexbox don't shrink the distance between each other <br>
+        5, for shadow, we could use overflow: hidden to make sure if stay within the container.
+    </p>
+
+    <a href="https://supersimple.dev/exercise/youtube/">youtube link</a>
+    <hr>
+    <h1>Code 13 </h1>
+    <p> see youtube header </p>
+
+    <h1>Exercise 13 </h1>
+    <button class="Q"> e13 a </button>
+    <div class="e13a">
+        <div class="e13-1 e13a-1">
+            <p class="e13a-11">
+                item1,100px
+            </p>
+        </div>
+        <div class="e13-2 e13a-2">
+            75px
+        </div>
+    </div>
+
+    <button class="Q"> e13 b </button>
+    <div class="e13b">
+        <div class="e13-1 e13b-1">
+        </div>
+        <div class="e13-2 e13b-2">
+            <div>
+                row1
+            </div>
+
+            <div class="e13b-21">
+                <div class="e13b-22">
+                    row2
+                </div>
+                <div class="e13b-22">
+                    row2
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <h1>Exercise 13 Challenge </h1>
+    <button class="Q"> e13 c-d </button>
+    <p>
+        vertical layout, 2 parts. below horizontal layout, 2 parts(pic+messages). message section: Vertical 3 part's:top
+        horzontal 2 parts.
+    </p>
+    <div class="e13c">
+        <div class="e13c-1"> <!--1 layer,V-->
+            All INBOXES
+        </div>
+        <div class="e13c-2"> <!--1 layer,V-->
+            <div class="l-section"> <!--2 layer,H left, profile pic-->
+                <img class="profile-pic" src="kitten.webp">
+            </div> <!--2 layer,H left, end-->
+
+            <div class="m-section"> <!--2 layer,H middle, nested messages-->
+                <div class="m-top"> <!--3 layer,V right time-->
+                    <div class="top-sender"> Chewy Promotions</div> <!--4 layer,H,title-->
+                    <div class="top-time"> 4:58 PM</div> <!--4 layer,H , time-->
+                </div> <!--3 layer,V up, title-->
+                <div class="m-subtitle"> Biggest sales of the year!</div> <!--3 layer,V middle, subtitle-->
+                <div class="m-context"> Hey there! We're writting to tell you about our...</div>
+                <!--3 layer,V down, content-->
+            </div> <!--2 layer,H middle, end-->
+
+        </div> <!--1 layer,V-->
+    </div>
+
+    <button class="Q"> e13 d-e </button>
+    <p>
+        reuse code from 13c, 3 emails
+    </p>
+    <div class="e13c">
+        <div class="e13c-1"> <!--1 layer,V-->
+            All INBOXES
+        </div>
+        <div class="e13c-2"> <!--1 layer,V-->
+            <div class="l-section"> <!--2 layer,H left, profile pic-->
+                <img class="profile-pic" src="kitten.webp">
+            </div> <!--2 layer,H left, end-->
+
+            <div class="m-section"> <!--2 layer,H middle, nested messages-->
+                <div class="m-top"> <!--3 layer,V right time-->
+                    <div class="top-sender"> Chewy Promotions</div> <!--4 layer,H,title-->
+                    <div class="top-time"> 4:58 PM</div> <!--4 layer,H , time-->
+                </div> <!--3 layer,V up, title-->
+                <div class="m-subtitle"> Biggest sales of the year!</div> <!--3 layer,V middle, subtitle-->
+                <div class="m-context"> Hey there! We're writting to tell you about our...</div>
+                <!--3 layer,V down, content-->
+            </div> <!--2 layer,H middle, end-->
+
+        </div> <!--1 layer,V-->
+
+        <div class="e13c-2"> <!--1 layer,V-->
+            <div class="l-section"> <!--2 layer,H left, profile pic-->
+                <img class="profile-pic" src="puppy.jpg">
+            </div> <!--2 layer,H left, end-->
+
+            <div class="m-section"> <!--2 layer,H middle, nested messages-->
+                <div class="m-top"> <!--3 layer,V right time-->
+                    <div class="top-sender"> Best Buy</div> <!--4 layer,H,title-->
+                    <div class="top-time"> 12:32 PM</div> <!--4 layer,H , time-->
+                </div> <!--3 layer,V up, title-->
+                <div class="m-subtitle"> Your Best buy eReceipt</div> <!--3 layer,V middle, subtitle-->
+                <div class="m-context"> Thank you for shopping at Best Buy,here is...</div>
+                <!--3 layer,V down, content-->
+            </div> <!--2 layer,H middle, end-->
+
+        </div> <!--1 layer,V-->
+
+        <div class="e13c-2"> <!--1 layer,V-->
+            <div class="l-section"> <!--2 layer,H left, profile pic-->
+                <img class="profile-pic" src="finch.jpg">
+            </div> <!--2 layer,H left, end-->
+
+            <div class="m-section"> <!--2 layer,H middle, nested messages-->
+                <div class="m-top"> <!--3 layer,V right time-->
+                    <div class="top-sender"> Netflix</div> <!--4 layer,H,title-->
+                    <div class="top-time"> 9:00 AM</div> <!--4 layer,H , time-->
+                </div> <!--3 layer,V up, title-->
+                <div class="m-subtitle"> Here's what's coming soon to Netflix</div> <!--3 layer,V middle, subtitle-->
+                <div class="m-context"> Brand new movies and shows, old favorites...</div><!--3 layer,V down, content-->
+            </div> <!--2 layer,H middle, end-->
+
+        </div> <!--1 layer,V-->
+    </div>
+    <hr>
+
+
+    <button class="Q"> e13f </button>
+    <div class="e13f">
+        <!-- nested layout, first H divide into pic + messages, then vertical into 3 parts, bottom use another nested flexbox -->
+        <div class="l-section"> <!--1 layer,H left, profile pic-->
+            <img class="profile-pic" src="kitten.webp">
+        </div> <!--1 layer,H left, end-->
+
+        <div class="r-section"> <!--2 layer,H middle, nested messages-->
+            <div class="r-top"> <!--3 layer,username, id-->
+                <div class="top-username"> supersimple.dev</div> <!--4 layer,H,name-->
+                <div class="top-userid"> @SuperSimpleDev</div> <!--4 layer,H , id-->
+            </div> <!--3 layer,V up, title-->
+            <div class="r-post"> What is backend web development? A complete overview. New video is up!</div>
+            <!--3 layer,context of the post-->
+
+            <!--Frame: Horizontal, 2 parts, right-vertical 2 parts-->
+            <div class="r-frame"> <!--thumbnail of a link-->
+                <div class="blank-tn"></div>
+
+                <div class="f-messages"> <!--vertical messages, link, intro-->
+                    <div class="youtube-link"> youtube.com </div>
+                    <div class="youtube-video-intro"> Backend web developement - a complete overview(2021)</div>
+                </div>
+            </div><!--frame ends-->
+        </div> <!--2 layer,H middle, end-->
+
+    </div>
+
+
+</body>
